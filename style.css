@@ -1,0 +1,960 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+* {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14.4px;
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+}
+.headnav{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.head {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    display: flex;
+}
+.connect{
+    display: flex;
+    align-items: center;
+    margin-right: 65px;
+    gap: 6px;
+}
+.logo {
+    margin-top: 3px;
+    margin-left: 50px;
+}
+.logo img{
+    width: 170px;
+    height: 95px;
+}
+.title0{
+    border-left: 2px solid rgb(7, 89, 7);
+    height: 80px;
+    margin-top: 10px ;
+}
+.title1 h1{
+    color:rgb(6, 87, 6);
+    font-size:35px;
+    font-family: "Kaushan Script", cursive;
+    margin-left: 30px;
+    font-weight: 100;
+}
+.title2 p{
+    color:rgb(6, 87, 6);
+    height: 20px;
+    margin-left: 40px;
+    margin-top: 12px;
+}
+.contact {
+    width: 27px;
+}
+.email {
+    width: 27px;
+}
+.fa-brands {
+    color: white;
+}
+.fa-solid {
+    color: white;
+}
+ .fa-brands:hover,
+ .fa-solid:hover{
+    color: #1b99f9;
+}
+.facebook {
+    border-radius:10px ;
+    width: 27px;
+}
+.linkdin {
+    border-radius:10px ;
+    width: 27px;
+}
+.youtube {
+    border-radius:10px ;
+    width: 29px;
+}
+.instagram {
+    border-radius:10px ;
+    width: 27px;
+}
+.join{
+    height: 50px;
+    border-left: 2px solid rgb(81, 80, 80);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.login{
+    padding-left: 30px;
+}
+.login a{
+    color: white;
+}
+.login a:hover{
+    color: #74C0FC;
+}
+.sep{
+    border-left: 2px solid  rgb(81, 80, 80);
+    height: 18px;
+    transform:rotateX('30%');
+}
+.signup a{
+    color: white;
+}
+.signup a:hover{
+    color: #74C0FC;
+}
+/* ================================================ Navbar ================================ */
+.nav-bar {
+    border-top: 2px solid  rgb(81, 80, 80);
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    flex-wrap: wrap;
+    box-shadow: -5px 3px 9px -5px rgb(148, 148, 148);
+    display: flex;
+}
+ul {
+    background-color: rgb(6, 6, 6);
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    /* margin: ; */
+}
+ul li {
+    display: inline-block;
+    padding: 16px;
+    border-radius: 15px;
+    
+}
+ul li:hover {
+    background-color: rgb(67, 66, 66);
+    transition-duration: 0.1s;
+}
+ul li .fa-solid {
+    color: white; 
+}
+.dropdown ul li:hover .fa-solid {
+    color: #22a5de;
+}
+.dropdown {
+    display: none;
+}
+ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    margin-left: -0.4cm;
+    margin-top: 0.432cm;
+}
+.dropdown ul li:hover {
+    background-color: rgb(67, 66, 66);
+    color: #22a5de;
+}
+.dropdown ul {
+    margin: 0;
+    padding: 0;
+    box-shadow: -5px 5px 5px -1px rgb(148, 148, 148);
+}
+.dropdown ul li {
+    display: block;
+    padding: 9px;
+}
+.subdropdown {
+    display: none;
+}
+.dropdown ul li:hover .subdropdown {
+    display: block;
+    position: absolute;
+    margin-left: 4.06cm;
+    margin-top: -0.72cm;
+    transition-duration: 0.5s;
+}
+.subdropdown ul {
+    margin: 0;
+    padding: 0;
+    width: 6cm;
+}
+.subdropdown ul li {
+    display: block;
+}
+.navbtn{
+    background-color: black;
+    border: none;
+    margin-left: 10px;
+    display: none;
+}
+/* ======================================= responsive ======================================= */
+@media (max-width: 1224px) {
+    .nav-bar ul li{
+        display: none;
+    }
+    .navbtn{
+        display: block;
+        padding: 16px;
+    }
+}
+@media(max-width: 1049px){
+    .headnav{
+        position: absolute;
+    }
+    .logo img{
+        width: 120px;
+        height: 65px;
+    }
+    .title0{
+        height: 50px;
+    }
+    .title1 h1{
+        font-size: 25px;
+    }
+    .title2 p{
+        font-size: 14px;
+        margin-top: 2px;
+        margin-left: 34px;
+    }
+    .carousel-wrapper .carousel-item{
+        margin-top: 120px;
+        height: 530px;
+    }
+    .welcome .welcome_text h1{
+        font-size: 35px;
+    }
+    .welcome .welcome_img {
+        margin-top: 50px;
+    }
+    .welcome .welcome_img img {
+        width: 300px;
+        height: 300px;
+    }
+    .middle_services .services_item{
+        margin: 20px;
+    }
+    .middle_lahore  .middle_lahore_tour .heading1 h1{
+        padding-top: 0;
+    }
+}
+@media (max-width: 900px){
+    .join{
+        display: none;
+    }
+    .connect{
+        margin-left: 10px;
+    }
+    .welcome {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .welcome .welcome_text {
+        width: 700px;
+        margin-bottom: 10px;
+    }
+    .welcome .welcome_img {
+        margin-top: 0px;
+    }
+    .welcome .welcome_img img {
+        height: 280px;
+        width: 280px;
+    }
+    .middle_tour .middle_tour_heading h1{
+        font-size: 35px;
+    }
+    .quick-gallary .quick-gallary-heading{
+        margin-left: 20px;
+    }
+    .quick-gallary .quick-image{
+        margin-left: 20px;
+    }
+    .quick-gallary .quick-image .quick-img{
+        margin-left: 4px;
+    }
+    .quick-gallary .quick-image .quick-img img{
+        height: 80px;
+        width: 80px;
+    }
+    .quick-gallary .quick-view{
+        margin-left: 295px;
+        margin-top: 0px;
+    }
+    .footer .quick-gallary{
+        height: 190px;
+    }
+    .footer .quick-contact{
+        margin-top: 10px;
+    }
+    .middle_lahore  .middle_lahore_tour .heading1 h1{
+        padding-top: 0;
+    }
+}
+@media (max-width: 765px){
+    .head{
+        justify-content: center;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .connect{
+        margin-left: 80px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+    .welcome .welcome_text h1{
+        font-size: 30px;
+    }
+    .middle_tour .middle_tour_heading h1{
+        font-size: 30px;
+    }
+    .middle_lahore .middle_lahore_tour .heading h1{
+        font-size: 30px;
+        margin-left: -40px;
+    }
+    .middle_lahore{
+        padding-left: 10px;
+    }
+    .middle_lahore  .middle_lahore_tour .heading1 h1{
+        padding-top: 0;
+    } 
+    .title1 h1{
+        font-size: 18px;
+    }
+}
+/* ====================================  middle===================================== */
+.carousel-wrapper {
+    overflow: hidden;
+    position: sticky !important;
+    width: 100%;
+    height: 650px;
+}
+.carousel-wrapper img { 
+    width: 100%; 
+    height: 500px;
+    margin-top: 150px;
+    filter: brightness(70%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* ===================================welcome=============================== */
+.welcome{
+    display: flex;
+    width: 100%;
+    background-color: #181818;
+    border-top: 1px solid  rgb(81, 80, 80);
+    justify-content: space-around;
+}
+.welcome_text{
+    margin-top: 40px;
+    margin: 20px;
+    margin-bottom: 90px;
+    text-align: justify;
+}
+.welcome_text h1{
+    font-family: "Ruthie", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px; 
+    color: #22a5de;
+}
+.welcome_text p{
+    font-family: "Open Sans", sans-serif;
+    padding-top: 23px;
+    font-size:14.5px;
+    color: white;
+    line-height: 1.4;
+}
+.welcome_img {
+    height: 380px;
+
+}
+.welcome_img img{
+    margin: 30px;
+    width: 350px;
+    height: 350px;
+    border: 4px solid rgb(80, 80, 81);
+    border-radius: 20px;
+}
+/* =================================== services ======================== */
+.middle_services{
+    background-color: rgb(81, 78, 78);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.services_item{
+    background-color: rgb(7, 7, 7);
+    box-shadow: -5px 5px 9px -3px rgb(213, 213, 213);
+    border-radius: 20px;
+    text-align: center;
+    height: 410px;
+    width: 350px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    flex-basis: 200;    
+}
+.service_icon{
+    border-radius: 80px;
+    width: 100px;
+    height: 75px;
+    margin-left: 125px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    /* background-color:#74C0FC; */
+    background-color:rgb(93, 129, 38);
+    padding-top: 25px;
+}
+.service_icon .fa-solid{
+    font-size: 50px;
+}
+.service_icon:hover{
+   /* background-color:rgb(93, 129, 38); */
+   background-color:#60b5f5;
+   transition: 0.2s;
+}
+.service_h h3{
+    color: white;
+    font-family: "Kaushan Script", cursive;
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.service_para{
+    color: white;
+    padding-left: 30px;
+    padding-right:30px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.service_btn{
+    width: 115px;
+    height: 26px;
+    margin-left: 115px;
+    background-color: rgb(93, 129, 38);
+    /* background-color: #74C0FC; */
+    border-radius: 5px;
+    padding-top: 9px;
+}
+.service_btn h6{
+    width: 100%;
+    height: 100%;
+    color: #121212;
+}
+.service_btn:hover{
+    background-color: rgb(167, 166, 166);
+    transition: 0.2s;
+}
+/* =======================================  middle tour  ============================= */
+.middle_tour{
+    background-color: #6d6c6c;
+    /* background-color: #8b8a8a; */
+}
+.middle_tour_heading{
+    width:100%;
+    display: grid;
+    place-content: center;
+}
+.middle_tour_heading h1{    
+    font-family: "Ruthie", cursive;
+    font-weight: 500;
+    margin: 20px;
+    font-style: normal;
+    font-size: 50px;  
+    color: white;
+}
+.middle_tour_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+.middle_tour_type{
+    background-color:black;
+    width: 330px;
+    height: 380px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.middle_tour_type .img{
+    width: 270px;
+    height: 210px;
+    margin-top: 25px;
+    border-bottom: 5px solid rgb(106, 243, 106);
+    border-radius: 10px;
+}
+.middle_tour_type img{
+    width: 100%;
+    height: 210px;
+    border-radius: 8px;
+}
+.middle_tour_type .heading{
+    width: 280px;
+    height: 40px;
+    display: grid;
+   place-content: center;
+}
+.middle_tour_type .heading h1{
+    color: white;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 25px;
+}
+.middle_tour_type .button{
+    background-color: rgb(81, 78, 78);
+    width: 280px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 4px;
+}
+.middle_tour_btn{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(108, 151, 45); 
+    border-radius: 4px;
+}
+.middle_tour_btn a{
+    height: 40px;
+    display: grid;
+    place-content: center;
+}
+.middle_tour_btn a{
+    color: white;
+}
+.middle_tour_btn:hover{
+    background-color:#479ee1;
+ }
+/* ========================================== middle lahore tour=========================== */
+.middle_lahore{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(46, 46, 46);
+    /* background-color: rgb(81, 78, 78); */
+    flex-wrap: wrap;
+}
+.middle_lahore_tour{
+    background-color: rgb(46, 46, 46);
+    width: 550px;
+    height: 400px;
+    border-radius: 8px; 
+    display: grid;
+    gap: 2rem;
+}
+.middle_lahore_tour img{
+    width: 180px;
+    height: 130px;
+    float: left;
+    margin-right: 20px;
+}
+.middle_lahore_tour .heading{
+    width: 280px;
+    height: 40px;
+    display: grid;
+   place-content: center;
+}
+.middle_lahore_tour .heading h1{
+    margin-left: 0px;
+    padding-top: 50px;
+    color: white;
+    /* color: #138cc0;; */
+    font-family: "Ruthie", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 38px;
+}
+.middle_lahore_tour .para p{
+    font-family: "Open Sans", sans-serif;
+    font-size:14.5px;
+    color: white;
+    line-height: 1.4;
+    text-align: justify;
+    padding-right: 10px;
+}
+.middle_lahore_tour .button{
+    background-color: rgb(103, 101, 101);
+    width: 98%;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: -20px;
+}
+.middle_lahore_tour .middle_tour_btn{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(97, 146, 23); 
+    border-radius: 4px;
+}
+.middle_lahore_tour .middle_tour_btn a{
+    height: 40px;
+    display: grid;
+    place-content: center;
+    color: white;
+}
+.middle_lahore_tour .middle_tour_btn:hover{
+    background-color:#479ee1;
+ }
+/* =======================================     footer    ============================== */
+.footer {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer h3 {
+    color: rgb(247, 249, 252);
+    font-family: "Kaushan Script", cursive;
+    font-weight: 200;
+    font-size: 22px;
+}
+.quick-contact {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.contact-heading {
+    margin-bottom: 10px;
+}
+.quick-contact p {
+    color: rgb(164, 164, 166);
+    font-weight: 100;
+    margin-bottom: 2px;
+}
+.email1 a:hover p {
+    color: #22a5de;
+    text-decoration: underline;
+}
+.foot-connect{
+    margin-left: 30px;
+}
+.connect-with-us {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.connect-with-us-through {
+    border: 2px solid rgb(94, 94, 95);
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 10px 10px 13px;
+    margin-top: 15px;
+    margin-left: 1px;
+}
+.email2:hover{
+    background-color: rgb(122, 122, 123);
+    cursor: pointer;
+}
+.facebook2:hover{
+    background-color: rgb(4, 4, 194);
+    cursor: pointer;
+}
+.linkdin2:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+.youtube2:hover{
+    background-color: rgb(190, 2, 2);
+    cursor: pointer;
+}
+.instagram2:hover{
+    background-color: rgb(152, 111, 6);
+    cursor: pointer;
+}
+.connect-with-us-through:hover .fa-brands {
+    color: white;
+    cursor: pointer;
+}
+.connect-with-us-through:hover .fa-solid {
+    color: white;
+    cursor: pointer;
+}
+.connect-with-us .fa-brands {
+    color: rgb(204, 205, 208);
+}
+.connect-with-us-through .fa-solid {
+    color: rgb(204, 205, 208);
+}
+.quick-gallary {
+    height: 250px;
+}
+.quick-gallary-heading {
+    display: block;
+    height: 35px;
+    width: 150px;
+    margin-left: 64px;
+    margin-top: 30px;
+}
+.quick-image{
+    display: flex;
+    margin-left: 60px ; 
+    margin-top:10px ; 
+}
+.quick-img {
+    margin-left: 8px;
+    border-radius: 20px;
+}
+.quick-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+.quick-view {
+    height: 20px;
+    width:fit-content;
+    margin-top: 5px;
+    margin-left: 500px;
+}
+.quick-view a {
+    color: rgb(204, 205, 208);
+}
+.quick-view:hover a {
+    color: #22a5de;
+    border-bottom: 1px solid #22a5de;;
+    transition: .5s;
+}
+/* ==================== subfooter================= */
+.subfooter{
+    text-align: center;
+    padding-top: 25px;
+    height: 40px;
+    background-color:rgb(81, 78, 78);
+}
+.subfooter p a{
+    font-size:15px;
+    color: #ada6a6;
+}
+.subfooter p {
+    color: #ada6a6;
+    font-weight: 100;
+    font-size: 13px;
+}
+.subfooter p a:hover{
+    color: #22a5de;
+    text-decoration: underline;
+}
+/* ============================================== Next Page ===================================================== */
+/* ============================================ Hotel Booking================================================= */
+.hotel_heading1{
+    background-color: #121212;
+    height: 80px;
+}
+.hotel_heading1 h1{
+    color: #22a5de;
+}
+.hotel_heading2{
+    height: 40px;
+}
+.hotel_heading3{
+    height: 80px;
+}
+.hotel_heading3 h1{
+    font-family: "Kaushan Script", cursive;
+    font-size: 35px;
+    font-weight: 100;
+    border: 4px solid rgb(154, 155, 154);
+    border-radius: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.hotel_heading2 h1{
+    font-family: "Kaushan Script", cursive;
+    font-size: 35px;
+    font-weight: 100;
+    border: 4px solid rgb(154, 155, 154);
+    border-radius: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+/* ============================================== next page ================================ */
+/* ============================================== tour booking ================================= */
+.booking{
+    background-color: #dfdada;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.booking_head{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(199, 196, 196);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.booking_head h1{
+    font-size: 18px;
+    margin-left: 20px;  
+}
+.booking_head .headicon{
+    margin-right: 20px;
+}
+.booking_head a .fa-solid{
+    color: #000;
+}
+.order-type{
+    width: 90%;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: 1px solid rgb(159, 158, 158);
+}
+.book-now{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(159, 158, 158);
+    padding-bottom: 30px;
+}
+.book-now-heading{
+    width: 100%;
+    height: 20px;
+    padding: 15px 0px 15px 20px;
+}
+.book-now-heading h1{
+    font-size: 18px;  
+}
+.departure-city{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.departure-city .deplabel{
+    margin-top: 10px;
+    height: 30px;
+    width: 95%;
+}
+.departure-city .dep-select{
+    height: 40px;
+    width: 95%;
+
+}
+.tour-day{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tour-day .daylabel{
+    margin-top: 15px;
+    height: 30px;
+    width: 95%;
+}
+.tour-day .day-select{
+    height: 40px;
+    width: 95%;
+
+}
+.date{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.date .datelable{
+    margin-top: 15px;
+    height: 30px;
+    width: 95%;
+}
+.date .date-select{
+    height: 40px;
+    width: 95%;
+}
+.departure-city{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.departure-city .deplabel{
+    margin-top: 15px;
+    height: 30px;
+    width: 95%;
+}
+.departure-city .dep-select{
+    height: 40px;
+    width: 95%;
+}
+.count{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     width: 100%;
+     padding-left: 20px;
+     padding-right: 30px;
+     margin-top: 20px;
+}
+.counter{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+.booking-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-top: 1px solid rgb(199, 196, 196);
+}
+.continue{
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #1b99f9;
+    text-align: center;
+    margin: 15px 30px 15px 0px;
+}
+.continue:hover{
+    background-color: rgb(150, 150, 150);
+    transition: 0.2s;
+}
+.continue p{
+    width: 100px;
+    height: 40px;
+    color: white;
+    margin-top: 15px; 
+}
+.order-amount p{
+    margin-left: 30px;
+    color: #6d6c6c;
+    font-size: medium;
+}
+.order-amount h1{
+    margin-left: 30px;
+    font-size: large;
+    color: #1397fc;
+    margin-top: 8px;
+}
